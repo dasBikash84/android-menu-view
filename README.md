@@ -1,6 +1,6 @@
 # android-menu-view
 
-<h4>Library for Android custom menu view.</h4>
+<h4>Library for Android custom menu view (options menu).</h4>
 
 
 [![](https://jitpack.io/v/dasBikash84/android-menu-view.svg)](https://jitpack.io/#dasBikash84/android-menu-view)
@@ -25,7 +25,11 @@ dependencies {
 ```
 
 ## Features
-- 
+- Custom [`menu view`](https://github.com/dasBikash84/android-menu-view/blob/master/android_menu_view/src/main/java/com/dasbikash/menu_view/MenuView.kt)(options menu) with very simple interface.
+- Task assigned to menu items will run on UI/main thread.
+- Can be attached to [`click/long-click`](https://github.com/dasBikash84/android-menu-view/blob/master/android_menu_view/src/main/java/com/dasbikash/menu_view/MenuViewUtils.kt) of any other view.
+- For kotlin users extension functions provided on [`View`](https://developer.android.com/reference/android/view/View.html) for enabling Menu view launch on click/long-click.
+- Menu item text color, size and back-ground is customizable. Also menu item seperator bg-color can be changed.
 
 License
 --------
