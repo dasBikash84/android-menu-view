@@ -66,7 +66,7 @@ dependencies {
     val menuView = getDefaultMenuView(context)
     menuView.show()
 ```
-### Image of default `MenuView`:
+### Image of `MenuView` with default settings:
 ![](https://github.com/dasBikash84/android-menu-view/raw/master/android_menu_view/src/main/res/drawable/default_menu.png)
 
 ##### Creating a customized `MenuView`
@@ -108,7 +108,7 @@ dependencies {
     val menuView = getCustomMenuView(context)
     menuView.show()
 ```
-### Image of customized `MenuView`:
+### Image of `MenuView` with custom settings:
 ![](https://github.com/dasBikash84/android-menu-view/raw/master/android_menu_view/src/main/res/drawable/custom_menu.png)
 ---
 
@@ -116,11 +116,20 @@ dependencies {
 ```
      // view is instance of 'View' class
      // context is Android context
+     
     MenuViewUtils.attachMenuViewForClick(view,getDefaultMenuView(context!!))
+    
+            // OR
+            
+    view.attachMenuViewForClick(view,getDefaultMenuView(context!!))
 ```
 ##### Attaching a `MenuView` with view long click:
 ```
     MenuViewUtils.attachMenuViewForLongClick(getView()!!,getDefaultMenuView(context!!))
+    
+            // OR
+            
+    view.attachMenuViewForLongClick(view,getDefaultMenuView(context!!))
 ```
 
 
