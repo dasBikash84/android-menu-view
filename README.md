@@ -117,19 +117,19 @@ dependencies {
      // view is instance of 'View' class
      // context is Android context
      
-    MenuViewUtils.attachMenuViewForClick(view,getDefaultMenuView(context!!))
+    MenuViewUtils.attachMenuViewForClick(view,getDefaultMenuView(context))
     
             // OR
             
-    view.attachMenuViewForClick(view,getDefaultMenuView(context!!))
+    view.attachMenuViewForClick(view,getDefaultMenuView(context))
 ```
 ##### Attaching a MenuView with `view long click`:
 ```
-    MenuViewUtils.attachMenuViewForLongClick(getView()!!,getDefaultMenuView(context!!))
+    MenuViewUtils.attachMenuViewForLongClick(view,getDefaultMenuView(context))
     
             // OR
             
-    view.attachMenuViewForLongClick(view,getDefaultMenuView(context!!))
+    view.attachMenuViewForLongClick(view,getDefaultMenuView(context))
 ```
 
 
