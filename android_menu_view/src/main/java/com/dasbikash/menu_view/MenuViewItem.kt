@@ -12,5 +12,5 @@ import androidx.annotation.Keep
 @Keep
 class MenuViewItem(
     val text:String,
-    val task:()->Any?
+    val task:()->Unit
 )
