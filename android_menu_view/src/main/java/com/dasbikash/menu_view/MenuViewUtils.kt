@@ -43,9 +43,6 @@ class MenuViewUtils {
                     view = menuViewForDialog
                 )
             )
-            dialog.getButton(DialogInterface.BUTTON_POSITIVE).visibility=View.GONE
-            dialog.getButton(DialogInterface.BUTTON_NEGATIVE).visibility=View.GONE
-            dialog.getButton(DialogInterface.BUTTON_NEUTRAL).visibility=View.GONE
             val menuAdapter = MenuViewItemAdapter(dialog, menuView)
             menuViewForDialog.adapter = menuAdapter
             menuAdapter.submitList(menuView.mMenuViewItems.toList())
