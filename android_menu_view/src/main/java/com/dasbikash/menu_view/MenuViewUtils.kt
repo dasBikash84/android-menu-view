@@ -1,6 +1,7 @@
 package com.dasbikash.menu_view
 
 import android.content.Context
+import android.content.DialogInterface
 import android.view.LayoutInflater
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
@@ -42,6 +43,9 @@ class MenuViewUtils {
                     view = menuViewForDialog
                 )
             )
+            dialog.getButton(DialogInterface.BUTTON_POSITIVE).visibility=View.GONE
+            dialog.getButton(DialogInterface.BUTTON_NEGATIVE).visibility=View.GONE
+            dialog.getButton(DialogInterface.BUTTON_NEUTRAL).visibility=View.GONE
             val menuAdapter = MenuViewItemAdapter(dialog, menuView)
             menuViewForDialog.adapter = menuAdapter
             menuAdapter.submitList(menuView.mMenuViewItems.toList())
