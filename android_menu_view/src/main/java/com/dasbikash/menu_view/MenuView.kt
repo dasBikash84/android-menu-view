@@ -14,13 +14,13 @@ import android.graphics.Color
 
 class MenuView(
     //Text font size of menu item entry
-    val menuItemFontSize:Float = 16.0f,
+    val menuItemFontSize:Float = 18.0f,
     //Back-ground color of menu item entry
-    val menuItemFontBg:Int = Color.CYAN,
+    val menuItemFontBg:Int = Color.WHITE,
     //Text font color of menu item entry
     val menuItemFontColor:Int = Color.BLACK,
     //Back-ground color of menu item separator
-    val menuSeparatorBg:Int = Color.DKGRAY){
+    val menuSeparatorBg:Int = Color.GRAY){
 
     internal val mMenuViewItems = mutableListOf<MenuViewItem>()
 
