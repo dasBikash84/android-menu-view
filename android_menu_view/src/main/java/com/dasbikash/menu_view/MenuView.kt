@@ -14,7 +14,7 @@ import android.graphics.Color
 
 class MenuView(
     //Text font size of menu item entry
-    val menuItemFontSize:Float = 18.0f,
+    val menuItemFontSize:Float = 17.0f,
     //Back-ground color of menu item entry
     val menuItemFontBg:Int = Color.WHITE,
     //Text font color of menu item entry
